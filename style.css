@@ -1,0 +1,60 @@
+body {
+    background-image: url('https://cdn.vectorstock.com/i/1000v/13/40/todo-list-seamless-pattern-universal-background-vector-7561340.jpg');
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    width: 40%; /* Adjust width as needed */
+    height: 80%; /* Adjust height as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden; /* Hide overflow by default */
+}
+
+#heading {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+    height: 60px; /* Adjust height as needed */
+    line-height: 60px; /* Align text vertically if necessary */
+}
+
+#take-input {
+    font-size: large;
+    margin-bottom: 10px; /* Space below the input field */
+}
+
+#list {
+    font-size: x-large;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 60%; /* Set max height to create a scrolling area */
+}
+
+.done {
+    text-decoration: line-through;
+}
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between text and button */
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
